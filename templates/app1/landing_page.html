@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+{%load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome Page</title>
+
+
+  </head>
+  <body style="background-color:grey;font-family:sans-serif ">
+
+    <div style="background-color:white;width:50%;margin-left:auto;margin-right:auto;padding:3%">
+
+        <div style="text-align:center">
+             <img src="{% static 'unij.png' %}" style="width:20%;height:20%" alt="uni">
+        </div>
+      <br>
+       <h1 class="text-center htitle">Welcome to Used Cars Analysis and Prediction Application!! </h1>
+      <br>
+        <div class="card shadow-lg" >
+
+        <div class="card-body">
+
+          <p class="card-text ">Firstly, this is a graduation project done by 4 students majoring in data science at the University of Jeddah. </p>
+          <p class="card-text">The web application is aimed to help individuals and enterprises that are willing to buy or sell used cars in Saudi Arabia to set prices for cars in the most accurate way. </p>
+          <p class="card-text ">This is done by taking input from the website’s users, then processing it using a machine learning model that predicts the car price based on the user’s input.</p>
+          <p class="card-text ">Furthermore, the R squared score of the model used to predict the car prices is ≈ <b class="text-danger">%96</b> , hence you can rest assured that the prediction is quite much accurate &#128522; .</p>
+          <p class="card-text ">Additionally, the web application will route its users to an interactive dashboard that will help in understanding the used cars market in Saudi Arabia.</p>
+          <br>
+           <div style="text-align:center">
+                 <a href="{%url 'index'%}" style="border:1px solid black;padding:1%;font-size:18px;background-color:blue;color:white" role="button">Let's Predict</a>
+
+
+       </div>
+        </div>
+      </div>
+
+    </div>
+
+
+</body>
+</html>
