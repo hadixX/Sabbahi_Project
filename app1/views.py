@@ -2,6 +2,7 @@ from django.http import JsonResponse
 from django.shortcuts import render
 import pickle as pk
 import pandas as pd
+from django.views.decorators.csrf import csrf_exempt
 
 from sklearn.preprocessing import StandardScaler
 
@@ -29,6 +30,7 @@ def index(request):
     return render(request, "app1/index.html", context={'bigdata': context})
 
 
+@csrf_exempt
 def motor(request):
     if request.method == 'POST':
         permit_type = request.POST['pt']
