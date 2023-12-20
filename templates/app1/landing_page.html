@@ -6,15 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome Page</title>
       <style>
+
           @media only screen and (max-width: 600px) {
+           body{
+                margin:0px;
+
+           }
               .container {
                 width:100% !important;
+                padding:0px !important;
 
-              }
+
+}
               .kauimage{
                 width:50% !important;
                 height:50% !important;
               }
+               h2 {
+
+                 padding:1%;
+                }
+                .card-body{
+                    padding:2%;
+                }
+                .predict_btn{
+                    margin-bottom:3%;
+                }
             }
       </style>
 
@@ -24,10 +41,10 @@
     <div style="background-color:white;width:50%;margin-left:auto;margin-right:auto;padding:3%" class="container">
 
         <div style="text-align:center">
-             <img src="{% static 'kau.jpg' %}" style="width:20%;height:20%" alt="uni" class="kauimage">
+             <img src="{% static 'kau.png' %}" style="width:20%;height:20%" alt="uni" class="kauimage">
         </div>
       <br>
-       <h2 class="text-center">Welcome to the Building Permit’s Prediction Application!! </h2>
+       <h2 class="text-center">Welcome to the Building Permit’s Prediction Application!!</h2>
       <br>
         <div class="card shadow-lg" >
 
@@ -36,10 +53,10 @@
           <p class="card-text ">This is a graduation project done by 3 industrial engineering students at the king Abdulaziz university. </p>
           <p class="card-text">The main objective of this web application is to help the employees of Jeddah’s municipality to predict the prices of the building permits in the most accurate way. </p>
           <p class="card-text ">The data collection method was done by taking data from the municipality and processing it using machine learning model that predicts the building permit fees based on the customers’ inputs.</p>
-          <p class="card-text ">The accuracy of the building permit predictor ≈ <b class="text-danger">%92</b>, which will provide the employee with accurate data in a more streamlined and easier way.</p>
+          <p class="card-text ">The accuracy of the building permit predictor ≈ <b class="text-danger">%90</b>, which will provide the employee with accurate data in a more streamlined and easier way.</p>
 
           <br>
-           <div style="text-align:center">
+           <div class="predict_btn" style="text-align:center">
                  <a href="{%url 'index'%}" style="border:1px solid black;padding:1%;font-size:18px;background-color:blue;color:white" role="button">Let's Predict</a>
 
 

@@ -4,17 +4,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Estate Prediction</title>
+    <title>Permit Prediction</title>
       <style>
           @media only screen and (max-width: 600px) {
+             body{
+                margin:0px;
+
+           }
               .container {
                 width:100% !important;
+
+
               }
               .feimage{
                 width:50% !important;
                 height:50% !important;
               }
             }
+            h2 {
+             word-wrap: break-word;
+            overflow-wrap: break-word; /* Add this line for better compatibility */
+            white-space: normal;
+        }
       </style>
   </head>
   <body style="background-color:grey;font-family:sans-serif ">
@@ -28,7 +39,7 @@
 
 
 
-   <h2>Kindly, Enter Your Building Information</h2>
+   <h2 >Kindly, Enter Your Permit Information</h2>
         <form method="post" action="{% url 'motor' %}">
            {% csrf_token %}
 
